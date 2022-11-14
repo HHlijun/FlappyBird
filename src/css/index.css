@@ -1,0 +1,125 @@
+@font-face {
+    font-family: flappy bird;
+    src: url(../../static/fonts/FB.eot);
+    font-weight: 400;
+    font-style: normal;
+}
+#sorce{
+    width: 30px;
+    padding: 5px;
+    text-align: center;
+    font-family: 'flapyy bird';
+    font-size: 50px;
+    text-shadow: 0 0 3px #FF0000;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+#game-box{
+    width: 480px;
+    height: 560px;
+    background-image: url(../../static/images/background.png);
+    background-position: 0 -80px;
+    border: 1px solid rebeccapurple;
+    position: relative;
+    overflow: hidden;
+}
+#lang{
+    position: absolute;
+    height: 80px;
+    width: 480px;
+   background-image: url(../../static/images/ground.png);
+   bottom: 0px;
+   left: 0;
+   z-index: 1;
+}
+#bird{
+    position: absolute;
+    width: 57px;
+    height: 40px;
+    background-image: url(../../static/images/bird.png);
+    top: 150px;
+    left: 0;
+    margin:0 150px;
+}
+
+#pipe1-up{
+    position: absolute;
+    width: 88px;
+    height: 506px;
+    background-image: url(../../static//images/pipe_up.png);
+    top: -300px;
+    left: 450px;
+}
+#pipe1-down{
+     z-index: 0;
+    position: absolute;
+    width: 88px;
+    height: 506px;
+    background-image: url(../../static//images/pipe_down.png);
+    left: 480px;
+    top:406px;
+
+    
+
+}
+#pipe2-up{
+    position: absolute;
+    width: 88px;
+    height: 506px;
+    background-image: url(../../static//images/pipe_up.png);
+    left: 880px;
+    top:-400px;
+}
+#pipe2-down{
+    position: absolute;
+    width: 88px;
+    height: 506px;
+    background-image: url(../../static//images/pipe_down.png);
+    left: 880px;
+    top: 306px;
+}
+#logo img{
+    position: relative;
+    z-index: 999;
+}
+#start{
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#start button{
+    width: 200px;
+    height: 100px;
+    font-size: 50px;
+    width: 200px;
+    height: 100px;
+    background-color: chartreuse;
+}
+#cover{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(rgba(168,168,186,0.253),rgb(230, 230, 230));
+    display: none;
+    transition: all .4s linear 0s;
+}
+#restart{
+    position: absolute;
+    background-image: url(../../static/images/restart.png);
+    width: 214px;
+    height: 75px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+    display: none;
+}
+
